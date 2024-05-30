@@ -1,0 +1,15 @@
+enum StatusRequest {
+  none,
+  loading,
+  success,
+  failure,
+  serverfailure,
+  serverException,
+  offlinefailure,
+  emptyAddress,
+  emptyOrders,
+  emptyNotification,
+  emptyFavorite,
+  delivaryMustCompleteOrders,
+  delivaryEmptyOrders,
+}

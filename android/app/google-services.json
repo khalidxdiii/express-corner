@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "330353146783",
+    "project_id": "express-corner",
+    "storage_bucket": "express-corner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330353146783:android:9f693bc04a24793b229baa",
+        "android_client_info": {
+          "package_name": "com.example.express_corner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvdABkGNpafpQzeF647TR4XM0qjgLOJqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
