@@ -1,11 +1,9 @@
-import 'package:express_corner/core/constant/approutes.dart';
 import 'package:express_corner/core/paymob_manger/paymob_manger.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/class/statusRequest.dart';
-import '../../../empthy status/presentation/views/status_success_view.dart';
+import '../../../../core/services/services.dart';
 
 abstract class DelivaryWalletController extends GetxController {
   confirm();
@@ -15,6 +13,7 @@ class DelivaryWalletControllerImp extends DelivaryWalletController {
   StatusRequest statusRequest = StatusRequest.none;
   late GlobalKey<FormState> key;
   late TextEditingController cash;
+  MyServices myServices = Get.find();
 
   // @override
   // confirm() {
@@ -40,9 +39,16 @@ class DelivaryWalletControllerImp extends DelivaryWalletController {
     ////////////////
 
 // wallet
-    PaymobManger()
-        .testgetPaymentWalletKey(1000, "EGP")
-        .then((String paymentKey) => launchUrl(Uri.parse(paymentKey)));
+    // PaymobManger()
+    //     .testgetPaymentWalletKey(1000, "EGP")
+    //     .then((String paymentKey) => launchUrl(Uri.parse(paymentKey)));
+
+    PaymobManger().pay(
+        amount: 500,
+        currency: "EGP",
+        userFirstName: "Test",
+        userLastName: "Flutter",
+        userPhoneNumber: "+201272781129");
   }
 
   @override
