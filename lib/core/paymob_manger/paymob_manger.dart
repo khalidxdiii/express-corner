@@ -224,4 +224,18 @@ class PaymobManger {
   //   );
   //   return response.data["redirect_url"];
   // }
+
+////////////////////////////// example to use ////////////
+  ///// work online card ////////
+
+  // PaymobManger().getPaymentKey(10, "EGP").then((String paymentKey) =>
+  //     launchUrl(Uri.parse(
+  //         "https://accept.paymob.com/api/acceptance/iframes/846900?payment_token=$paymentKey")));
+
+  ////////////////
+
+// wallet work ////////
+  // PaymobManger()
+  //     .testgetPaymentWalletKey(1000, "EGP")
+  //     .then((String paymentKey) => launchUrl(Uri.parse(paymentKey)));
 }

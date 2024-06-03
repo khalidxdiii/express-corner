@@ -30,19 +30,6 @@ class DelivaryWalletControllerImp extends DelivaryWalletController {
 
   @override
   confirm() {
-    ///// work online card ////////
-
-    // PaymobManger().getPaymentKey(10, "EGP").then((String paymentKey) =>
-    //     launchUrl(Uri.parse(
-    //         "https://accept.paymob.com/api/acceptance/iframes/846900?payment_token=$paymentKey")));
-
-    ////////////////
-
-// wallet
-    // PaymobManger()
-    //     .testgetPaymentWalletKey(1000, "EGP")
-    //     .then((String paymentKey) => launchUrl(Uri.parse(paymentKey)));
-
     PaymobManger().pay(
         amount: 500,
         currency: "EGP",
