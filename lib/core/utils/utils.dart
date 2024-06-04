@@ -24,4 +24,5 @@ class Utils {
 
   static const String paymobCardPaymentMethodIntegrationId = '4577606';
   static const String paymobMobileWalletPaymentMethodIntegrationId = '4577668';
+  
 }
