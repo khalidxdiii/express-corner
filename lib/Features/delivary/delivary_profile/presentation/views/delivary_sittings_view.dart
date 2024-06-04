@@ -8,7 +8,7 @@ import 'package:get/get.dart';
 import '../../../../../core/constant/approutes.dart';
 import '../../../../../core/functions/custom_show_dialog.dart';
 import '../../../../../core/shared/defult_button.dart';
-import '../../../delivary Layout/presentation/controllers/delivary_home_controller.dart';
+import '../../../delivary_Layout/presentation/controllers/delivary_home_layout_controller.dart';
 import '../../controllers/delivary_profile_controller.dart';
 import '../../controllers/delivary_sittings_controller.dart';
 import '../widgets/delivary_select_option.dart';

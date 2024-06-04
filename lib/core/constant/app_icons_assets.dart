@@ -75,4 +75,9 @@ class AppIconsAsset {
   static const String settingNotifications =
       '$rootIcons/settingNotifications.svg';
   static const String delivaryStatusType = '$rootIcons/delivaryStatusType.svg';
+
+  ////////////// delivary ////////////
+  // wallet
+  static const String delivaryWalletCoins =
+      '$rootIcons/delivary_wallet_coins.svg';
 }

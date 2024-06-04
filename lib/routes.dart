@@ -14,7 +14,8 @@ import 'Features/auth/presentation/views/sign_up_secret_qustion.dart';
 import 'Features/auth/presentation/views/signup.dart';
 import 'Features/auth/presentation/views/signupverifycode.dart';
 import 'Features/auth/presentation/views/success_signup.dart';
-import 'Features/delivary/delivary Layout/presentation/views/delivary_home_layout_view.dart';
+import 'Features/delivary/delivary_Layout/presentation/views/delivary_home_layout_view.dart';
+import 'Features/delivary/delivary_home_page/presentaion/views/delivary_home_page_view.dart';
 import 'Features/delivary/delivary_orders/presintaion/views/delivary_orders_details_view.dart';
 import 'Features/delivary/delivary_orders/presintaion/views/delivary_orders_status_view.dart';
 import 'Features/delivary/delivary_profile/presentation/views/contact_us/delivary_contact_us_view.dart';
@@ -162,6 +163,10 @@ List<GetPage<dynamic>>? routes = [
   GetPage(
       name: AppRoute.delivaryHomeLayoutView,
       page: () => const DelivaryHomeLayoutView()),
+
+  GetPage(
+      name: AppRoute.delivaryHomeView,
+      page: () => const DelivaryHomePageView()),
   // profile
   GetPage(
       name: AppRoute.delivaryProfile, page: () => const DelivaryProfileView()),

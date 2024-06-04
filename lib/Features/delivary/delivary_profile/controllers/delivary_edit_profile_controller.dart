@@ -9,7 +9,7 @@ import '../../../../core/class/statusRequest.dart';
 import '../../../../core/controller/gov_city_controller.dart';
 import '../../../../core/functions/handlingdata.dart';
 import '../../../../core/functions/upload_file.dart';
-import '../../delivary Layout/data/models/delivary_info_model.dart';
+import '../../delivary_Layout/data/models/delivary_info_model.dart';
 import '../data/datasorce/remote/profile_data.dart';
 import 'delivary_profile_controller.dart';
 

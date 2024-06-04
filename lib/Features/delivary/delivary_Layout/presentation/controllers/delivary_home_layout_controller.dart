@@ -4,17 +4,18 @@ import 'package:get/get.dart';
 import '../../../../../core/class/statusRequest.dart';
 import '../../../../../core/functions/handlingdata.dart';
 import '../../../../../core/services/services.dart';
+import '../../../delivary_home_page/presentaion/views/delivary_home_page_view.dart';
 import '../../../delivary_orders/presintaion/views/delivary_orders_layout_view.dart';
 import '../../../delivary_profile/presentation/views/delivary_profile_view.dart';
 import '../../data/datasorce/remote/delivary_home_data.dart';
 import '../../data/models/delivary_info_model.dart';
 
-abstract class DelivaryHomeController extends GetxController {
+abstract class DelivaryHomeLayoutController extends GetxController {
   changePage(int newIndex);
   delivaryApproveOrder();
 }
 
-class DelivaryHomeControllerImp extends DelivaryHomeController {
+class DelivaryHomeLayoutControllerImp extends DelivaryHomeLayoutController {
   int currentIndex = 0;
   StatusRequest statusRequest = StatusRequest.none;
   MyServices myServices = Get.find();
@@ -29,7 +30,7 @@ class DelivaryHomeControllerImp extends DelivaryHomeController {
   String cityName = "";
 
   List<Widget> body = const [
-    Icon(Icons.home),
+    DelivaryHomePageView(),
     DelivaryOrdersLayoutView(),
     DelivaryProfileView(),
   ];

@@ -7,7 +7,7 @@ import '../../../../../core/data/models/delivary_expertise_model.dart';
 import '../../../../../core/data/models/delivary_type_vehicle_model.dart';
 import '../../../../../core/functions/handlingdata.dart';
 import '../../../../../core/services/services.dart';
-import '../../../delivary Layout/data/models/delivary_info_model.dart';
+import '../../../delivary_Layout/data/models/delivary_info_model.dart';
 import '../../data/datasorce/remote/delivary_work_info_profile.dart';
 
 abstract class DelivaryWorkInfoProfileController extends GetxController {

@@ -5,15 +5,15 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../../core/constant/app_icons_assets.dart';
-import '../../controllers/delivary_home_controller.dart';
+import '../../controllers/delivary_home_layout_controller.dart';
 
 class DelivaryCustomBottomNavigationBar
-    extends GetView<DelivaryHomeControllerImp> {
+    extends GetView<DelivaryHomeLayoutControllerImp> {
   const DelivaryCustomBottomNavigationBar({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<DelivaryHomeControllerImp>(
+    return GetBuilder<DelivaryHomeLayoutControllerImp>(
       builder: (controller) => BottomNavigationBar(
         elevation: 0,
         unselectedItemColor: AppColor.gray,

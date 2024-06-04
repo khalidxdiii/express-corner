@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../controllers/delivary_home_controller.dart';
+import '../controllers/delivary_home_layout_controller.dart';
 import 'widgets/custom_bottom_navigation_bar.dart';
 
 class DelivaryHomeLayoutView extends StatelessWidget {
@@ -9,11 +9,11 @@ class DelivaryHomeLayoutView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Get.put(DelivaryHomeControllerImp());
+    Get.put(DelivaryHomeLayoutControllerImp());
     return Scaffold(
       bottomNavigationBar: const DelivaryCustomBottomNavigationBar(),
       body: SafeArea(
-        child: GetBuilder<DelivaryHomeControllerImp>(
+        child: GetBuilder<DelivaryHomeLayoutControllerImp>(
             builder: (controller) => controller.body[controller.currentIndex]),
       ),
     );

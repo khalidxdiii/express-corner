@@ -54,4 +54,7 @@ class AppImageAsset {
   // checkout
   static const String delivery = '$rootImage/delivery.png';
   static const String store = '$rootImage/market.png';
+
+  static const String delivaryWalletCoins =
+      '$rootImage/delivary_wallet_coins.JPG';
 }

@@ -69,6 +69,7 @@ class AppRoute {
   ///// delivary //////
   //delivary
   static const String delivaryHomeLayoutView = "/delivaryHomeLayoutView";
+  static const String delivaryHomeView = "/delivaryHomeView";
 
   // profile
   static const String delivaryProfile = "/delivaryProfile";

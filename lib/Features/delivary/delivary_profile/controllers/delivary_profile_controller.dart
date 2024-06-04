@@ -1,12 +1,12 @@
 import 'package:get/get.dart';
 
-import '../../delivary Layout/presentation/controllers/delivary_home_controller.dart';
+import '../../delivary_Layout/presentation/controllers/delivary_home_layout_controller.dart';
 import '../data/datasorce/remote/profile_data.dart';
 // import '../data/models/users_model.dart';
 
 abstract class ProfileController extends GetxController {}
 
-class DelivaryProfileControllerImp extends DelivaryHomeControllerImp {
+class DelivaryProfileControllerImp extends DelivaryHomeLayoutControllerImp {
   // StatusRequest? statusRequest = StatusRequest.none;
   // List<UsersModel> usersData = [];
   // UsersModel? userModel;
@@ -20,7 +20,7 @@ class DelivaryProfileControllerImp extends DelivaryHomeControllerImp {
   // String cityName = "";
 
   @override
-  void onInit()  {
+  void onInit() {
     // username = delivaryInfoData.first.usersName.toString();
     // image = delivaryInfoData.first.usersImage.toString();
     // govName = delivaryInfoData.first.usersGov.toString();

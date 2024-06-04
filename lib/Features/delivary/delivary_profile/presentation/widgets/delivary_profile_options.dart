@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../../core/constant/app_icons_assets.dart';
-import '../../../delivary Layout/presentation/controllers/delivary_home_controller.dart';
+import '../../../delivary_Layout/presentation/controllers/delivary_home_layout_controller.dart';
 import 'delivary_select_option.dart';
 
-class DelivaryProfileOptions extends GetView<DelivaryHomeControllerImp> {
+class DelivaryProfileOptions extends GetView<DelivaryHomeLayoutControllerImp> {
   const DelivaryProfileOptions({super.key});
 
   @override
@@ -28,6 +28,17 @@ class DelivaryProfileOptions extends GetView<DelivaryHomeControllerImp> {
             onTap: () {
               Get.toNamed(AppRoute.delivaryWorkInfoView,
                   arguments: {"delivaryModel": controller.delivaryInfoData});
+            },
+          ),
+          DelivarySelectOption(
+            text: "تقيماتك",
+            icon: AppIconsAsset.whoWeAre,
+            onTap: () {
+              Get.toNamed(AppRoute.delivaryRatingsView, arguments: {
+                "averageRating":
+                    controller.delivaryInfoData.first.averageRating,
+                "totalRatings": controller.delivaryInfoData.first.totalRatings,
+              });
             },
           ),
           DelivarySelectOption(

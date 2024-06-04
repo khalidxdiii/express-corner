@@ -58,9 +58,9 @@ class DelivaryInfo extends StatelessWidget {
                 ),
                 GestureDetector(
                   onTap: () {
-                    Get.toNamed(AppRoute.delivaryEditProfile, arguments: {
-                      "delivaryModel": controller.delivaryInfoData
-                    });
+                    // Get.toNamed(AppRoute.delivaryEditProfile, arguments: {
+                    //   "delivaryModel": controller.delivaryInfoData
+                    // });
                   },
                   child: CircleAvatar(
                     backgroundColor: Colors.white,
