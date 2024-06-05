@@ -20,6 +20,7 @@ class DelivaryCustomBottomNavigationBar
         selectedItemColor: AppColor.primaryColor,
         currentIndex: controller.currentIndex,
         type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.white,
         showUnselectedLabels: true,
         onTap: (value) {
           controller.changePage(value);
