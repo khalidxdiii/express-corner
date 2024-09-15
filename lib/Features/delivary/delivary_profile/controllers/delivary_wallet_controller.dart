@@ -31,7 +31,7 @@ class DelivaryWalletControllerImp extends DelivaryWalletController {
   @override
   confirm() {
     PaymobManger().pay(
-        amount: 500,
+        amount: 1,
         currency: "EGP",
         userFirstName: "Test",
         userLastName: "Flutter",
